@@ -209,16 +209,23 @@ function letterGrade(score, total){
       return "D";
     case percentage <= 0.6 && percentage >= 0:
       return "F";
-    };
+    }
 }
 /**
  * Checks if a `restaurant` object has are `views` field.
  * If it does, increase it by 1. If it does not,
- * set itsreviews` field to 1.
+ * set it's `reviews` field to 1.
  * @param {object} restaurant represents a restaurant
  */
-  
+function incrementReviews(restaurant){
+  if (restaurant.reviews){
+    restaurant.reviews += 1;
+  }else{
+  restaurant.reviews = 1;
+  }
+  return restaurant;
 }
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
