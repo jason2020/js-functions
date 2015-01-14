@@ -195,14 +195,30 @@ function isOdd (n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-
+function letterGrade(score, total){
+  var percentage = score / total;
+  switch (true){
+    case percentage >= 0.9 && percentage <= 1:
+      return "A";
+    case percentage <= 0.9 && percentage >= 0.8:
+      return "B";
+    case percentage <= 0.8 && percentage >= 0.7:
+      return "C";
+    case percentage <= 0.7 && percentage >= 0.6:
+    //somethimg wrong starting here
+      return "D";
+    case percentage <= 0.6 && percentage >= 0:
+      return "F";
+    };
+}
 /**
  * Checks if a `restaurant` object has are `views` field.
  * If it does, increase it by 1. If it does not,
  * set itsreviews` field to 1.
  * @param {object} restaurant represents a restaurant
  */
-
+  
+}
 /**
  * Joins two strings with a space.
  * @param {string} word1
