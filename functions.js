@@ -63,7 +63,10 @@ function divide(x, y){
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x) {
+  return Math.pow(x, 2)
+  // body...
+}
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
