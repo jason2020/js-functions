@@ -177,7 +177,13 @@ function isEven (n) {
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd (n){
+  if (n %1 === 0){
+    return true
+  }else{
+    return false
+  };
+}
 /**
  * Returns a letter grade.
  * "A": 90-100%
