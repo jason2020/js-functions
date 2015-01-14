@@ -37,7 +37,7 @@ function add(x, y){
  * @param {number} y
  * @return {number} the difference
  */
-function subtract(x, y) {
+function subtract(x, y){
   return x - y;
 }
 /**
@@ -46,7 +46,9 @@ function subtract(x, y) {
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x, y){
+  return x * y;
+}
 /**
  * Divides the first number by the second.
  * @param {number} x
