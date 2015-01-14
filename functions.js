@@ -111,21 +111,41 @@ function isGreaterThan(a, b) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan (a, b) {
+  if (a < b){
+    return true
+  }else{
+    return false
+  };
+  // body...
+}
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual (a, b) {
+  if (a === b){
+    return true
+  }else{
+    return false
+  };
+  // body...
+}
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum(x, y){
+  if(x < y){
+    return x;
+  }else{
+    return y;
+  };
+}
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
