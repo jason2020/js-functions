@@ -97,7 +97,14 @@ function calculate(operation, x, y) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(a, b) {
+  if (a > b){
+    return true
+  }else{
+    return false
+  };
+  // body...
+}
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
