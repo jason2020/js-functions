@@ -169,7 +169,7 @@ function isEven (n) {
     return true;
   }else{
     return false;
-  };
+  }
 }
   // body...
 /**
@@ -179,10 +179,10 @@ function isEven (n) {
  */
 function isOdd (n){
   if (n %1 === 0){
-    return true
+    return true;
   }else{
-    return false
-  };
+    return false;
+  }
 }
 /**
  * Returns a letter grade.
@@ -221,7 +221,7 @@ function incrementReviews(restaurant){
   if (restaurant.reviews){
     restaurant.reviews += 1;
   }else{
-  restaurant.reviews = 1;
+    restaurant.reviews = 1;
   }
   return restaurant;
 }
@@ -232,11 +232,21 @@ function incrementReviews(restaurant){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+function combine(word1, word2){
+var text1 = "hi";
+var text2 = "imbob";
 
-/**
- * Returns a circle object with the properties `circumference` and `area`.
- * Use Math.PI for the value π.
- * (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI)
- * @param {number} radius
- * @return {object} circle
- */
+// * Returns a circle object with the properties `circumference` and `area`.
+ //* Use Math.PI for the value π.
+ //* (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI)
+ //* @param {number} radius
+// * @return {object} circle
+// */
+function createCircle(radius){
+  var circle =  {
+    circumference: 2 * Math.PI* radius,
+    area : Math.PI * radius * radius
+
+  };
+  return circle;
+}
