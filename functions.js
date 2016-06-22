@@ -3,70 +3,88 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-function numberToString(number){
-  return number.toString();
+
+function numberToString(n) {
+	return n.toString();
 }
+
+
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-function increase(number){
-  return number + 1;
+
+function increase(n) {
+	return n += 1;
 }
+
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
- function decrease(number){
-  return number -= 1;
+
+ function decrease(n) {
+ 	return n -= 1;
  }
+
 /**
  * Adds two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the sum
  */
-function add(x, y){
-  return x + y;
-}
+
+ function add(x, y) {
+ 	return x + y;
+ }
+
+
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
-function subtract(x, y){
-  return x - y;
+
+function subtract(x, y) {
+	return x-y;
 }
+
 /**
  * Multiplies two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the product
  */
-function multiply(x, y){
-  return x * y;
-}
+
+ function multiply(x,y) {
+ 	return x * y;
+ }
+
+
 /**
  * Divides the first number by the second.
  * @param {number} x
  * @param {number} y
  * @return {number} the quotient
  */
-function divide(x, y){
-  return x / y;
+
+function divide(x, y) {
+	return x / y;
 }
+
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+
 function square(x) {
-  return Math.pow(x, 2)
-  // body...
+	return Math.pow(x, 2);
 }
+
 /**
  * Performs a mathematical operation on two numbers.
  * Also prints out the equation: (i.e.) "1 + 5 = 6" or "8 / 2 = 4".
@@ -75,115 +93,138 @@ function square(x) {
  * @param {number} y
  * @return {number} the result
  */
+
 function calculate(operation, x, y) {
-  switch (operation) { 
-    case "add":
-      console.log(x + " + " + y + " = " + (x + y));
-      return x + y;
-    case "subtract":
-      console.log(x + " - " + y + " = " + (x - y));
-      return x - y;
-    case "multiply":
-      console.log(x + " * " + y + " = " + (x * y));
-      return x * y;
-    case "divide":
-      console.log(x + " / " + y + " = " + (x / y));
-      return x / y;
-  };
-}
+ 	if (operation == "add") {
+ 		var z = x + y;
+ 		console.log(x + " " + "+" + " " + y + " = " + z);
+ 		return z;
+ 	} else if (operation == "subtract") {
+ 		var z = x - y;
+ 		console.log(x + " " + "-" + " " + y + " = " + z);
+ 		return z;
+ 	} else if (operation == "multiply") {
+ 		var z = x * y;
+ 		console.log(x + " " + "*" + " " + y + " = " + z);
+ 		return z;
+ 	} else if (operation == "divide") {
+ 		var z = x / y;
+ 		console.log(x + " " + "/" + " " + y + " = " + z);
+ 		return z;
+ 	}
+ 	
+ }
+
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+
 function isGreaterThan(a, b) {
-  if (a > b){
-    return true
-  }else{
-    return false
-  };
-  // body...
+	if (a > b) {
+		return true;
+	} else {
+		return false;
+	}
 }
+
+
 /**
  * Returns true if `a` is less than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-function isLessThan (a, b) {
-  if (a < b){
-    return true
-  }else{
-    return false
-  };
-  // body...
-}
+
+function isLessThan(a, b) {
+	if (a < b) {
+		return true;
+	} else {
+		return false;
+	}
+} 
+
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-function areEqual (a, b) {
-  if (a === b){
-    return true
-  }else{
-    return false
-  };
-  // body...
-}
+
+ function areEqual(a, b) {
+ 	if (a === b) {
+ 		return true;
+ 	} else {
+ 		return false;
+ 	}
+ }
+
+
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the smallest number
  */
-function minimum(x, y){
-  if(x < y){
-    return x;
-  }else{
-    return y;
-  };
-}
+
+ function minimum(x, y) {
+ 	if (x > y) {
+ 		return y;
+ 	} else {
+ 		return x;
+ 	}
+ }
+
+
 /**
  * Returns the largest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the largest number
  */
-function maximum(x, y){
-  if (x > y){
-    return x
-  }else{
-    return y
-  }
-}
+
+function maximum(x, y) {
+ 	if (x > y) {
+ 		return x;
+ 	} else {
+ 		return y;
+ 	}
+ }
+
+
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-function isEven (n) {
-  if (n %2 === 0){
-    return true;
-  }else{
-    return false;
-  }
+
+function isEven(n) {
+	if (n % 2 == 0) {
+		return true;
+	} else {
+		return false;
+	}
 }
+
+
   // body...
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-function isOdd (n){
-  if (n %1 === 0){
-    return true;
-  }else{
-    return false;
-  }
+
+
+function isOdd(n) {
+	if (n % 2 !== 0) {
+		return true;
+	} else {
+		return false;
+	}
 }
+
 /**
  * Returns a letter grade.
  * "A": 90-100%
@@ -195,35 +236,40 @@ function isOdd (n){
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-function letterGrade(score, total){
-  var percentage = score / total;
-  switch (true){
-    case percentage >= 0.9 && percentage <= 1:
-      return "A";
-    case percentage <= 0.9 && percentage >= 0.8:
-      return "B";
-    case percentage <= 0.8 && percentage >= 0.7:
-      return "C";
-    case percentage <= 0.7 && percentage >= 0.6:
-    //somethimg wrong starting here
-      return "D";
-    case percentage <= 0.6 && percentage >= 0:
-      return "F";
-    }
-}
+
+ function letterGrade(score, total) {
+ 	var grade = score / total;
+ 	if (grade >= 0.9) {
+ 		return "A";
+ 	} else if (grade >= 0.8) {
+ 		return "B";
+ 	} else if (grade >= 0.7) {
+ 		return "C";
+ 	} else if (grade >= 0.6) {
+ 		return "D";
+ 	} else {
+ 		return "F";
+ 	}
+ }
+
+
 /**
- * Checks if a `restaurant` object has are `views` field.
+ * Checks if a `restaurant` object has are `reviews` field.
  * If it does, increase it by 1. If it does not,
  * set it's `reviews` field to 1.
  * @param {object} restaurant represents a restaurant
  */
-function incrementReviews(restaurant){
-  if (restaurant.reviews){
-    restaurant.reviews += 1;
-  }else{
-    restaurant.reviews = 1;
-  }
-  return restaurant;
+var obj = {};
+
+incrementReviews(obj);
+
+function incrementReviews(restaurant) {
+ 	if (restaurant.reviews == undefined) {
+ 		restaurant.reviews = 1;
+ 	} else {
+ 		restaurant.reviews += 1;
+ 	}
+ 	return restaurant;
 }
 
 /**
@@ -232,9 +278,11 @@ function incrementReviews(restaurant){
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
-function combine(word1, word2){
-var text1 = "hi";
-var text2 = "imbob";
+
+function combine(word1, word2) {
+	return word1 + " " + word2;
+}
+
 
 // * Returns a circle object with the properties `circumference` and `area`.
  //* Use Math.PI for the value π.
@@ -242,11 +290,10 @@ var text2 = "imbob";
  //* @param {number} radius
 // * @return {object} circle
 // */
-function createCircle(radius){
-  var circle =  {
-    circumference: 2 * Math.PI* radius,
-    area : Math.PI * radius * radius
 
-  };
-  return circle;
+function createCircle(radius) {
+	var circle = {};
+	circle.circumference = 2 * Math.PI * radius;
+	circle.area = Math.PI * Math.pow(radius, 2);
+	return circle;
 }
